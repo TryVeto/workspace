@@ -17,15 +17,17 @@
 
 ## Third-party source
 
-The implementation's private source documentation identifies commercial UI components. The presence of an MIT notice in the tree does not establish that all copied components are MIT-licensed. Match every redistributed component to its provenance and exact license. Keep verified open-source files; replace the rest independently or obtain explicit redistribution permission.
+The private application was assembled in an environment that includes commercial Untitled UI source, so the private component tree is not published directly. The reviewed release direction is to reconstruct used UI component roots from Untitled UI's official MIT-licensed React repository at a pinned upstream revision, then apply only reviewed Veto-owned changes. The initial reviewed upstream revision is `4702dc0ea8d140c3491a85670c7b4fab47b722da`.
 
-Untitled UI distinguishes its open-source components from commercial source in its [license agreement](https://www.untitledui.com/license). Do not infer permission from a purchase or from the ability to download a component.
+This substantially narrows the UI-license problem but does not make the third-party-rights gate pass. Every transitive component, style, icon, package, font, image, example, and local patch still needs recorded provenance. Commercial files that are not independently available under the public MIT source remain excluded.
 
-Packages, fonts, icons, images, examples, and reference material require their own checks. Dependencies named in a design proposal are not evidence that the exact installed package has compatible terms.
+React itself is not a release blocker. Keep the existing React application rather than creating a second non-React mirror. See [open-source extraction](oss-extraction.md) for the fail-closed procedure.
 
 ## Extraction procedure
 
 Work from an identified candidate into a separate release directory. Use explicit allowed paths and inspect bytes before committing. Do not flip an existing operational repository to public. Do not copy captured screens, contact data, email, database snapshots, private instructions, or source archives into demo fixtures.
+
+The current private application also contains company-specific planning/bootstrap material and machine-local test paths. Those are explicit extraction blockers, not examples to sanitize in place. Move runtime company state below the application-source boundary and use synthetic public fixtures.
 
 Preserve applicable attribution and provenance without importing private Git history. Remove machine-specific setup assumptions. Create synthetic data and a fresh-install guide. Review the distributable build as well as the source.
 

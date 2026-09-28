@@ -8,7 +8,7 @@ from pathlib import Path, PurePosixPath
 REQUIRED = {
     'README.md', 'LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'SECURITY.md',
     'AGENTS.md', 'release-status.json', 'docs/release-readiness.md',
-    'docs/architecture.md', 'docs/experience-contracts.md',
+    'docs/architecture.md', 'docs/experience-contracts.md', 'docs/oss-extraction.md',
     'acceptance/workspace.feature', 'tools/check_public_tree.py',
 }
 GATES = {

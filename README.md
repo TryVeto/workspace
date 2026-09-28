@@ -53,7 +53,7 @@ Scoped runtime and provider adapters
 
 The app owns durable business meaning. Runtime adapters supply cognition and execution. A search or memory provider is replaceable and must not become the only home of a task, document, conversation, or approved decision.
 
-Read the [architecture](docs/architecture.md), [experience contracts](docs/experience-contracts.md), and [release gates](docs/release-readiness.md).
+Read the [architecture](docs/architecture.md), [experience contracts](docs/experience-contracts.md), [open-source extraction contract](docs/oss-extraction.md), and [release gates](docs/release-readiness.md).
 
 ## What can I run today?
 
@@ -71,12 +71,14 @@ These checks qualify the publication package only. They do not establish applica
 ## Road to the first application release
 
 1. Freeze an exact source candidate and inventory its dependencies, assets, and rights.
-2. Keep verifiably open-source components; replace or obtain redistribution rights for restricted components. Preserve required notices.
-3. Move instance data, conversations, captures, credentials, private reference material, and diagnostics outside the release tree. Use synthetic demo data.
+2. Keep the existing React application. Rehydrate ambiguous Untitled UI roots from a pinned public MIT upstream and apply only reviewed Veto-owned changes; do not publish the commercial private component tree directly.
+3. Move instance data, conversations, captures, credentials, private reference material, machine-local test assumptions, and diagnostics outside the release tree. Use synthetic demo data.
 4. Prove a clean install and an end-to-end task/conversation/capture journey in an isolated environment.
 5. Qualify access controls, approvals, voice identity, recovery, and packaging before claiming those capabilities.
 
 The full application source release is **blocked pending those gates**. A green documentation check does not remove that block.
+
+For deployable services, Workspace may use provider adapters rather than owning infrastructure mechanics. [Openship is the first deployment adapter candidate](docs/deployment-openship.md); adoption requires an exact-commit preview, acceptance, rollback, and reconciliation qualification before production use.
 
 ## Contributing
 
