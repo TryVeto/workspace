@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "files": [
+    ".editorconfig",
+    ".gitattributes",
+    ".github/ISSUE_TEMPLATE/bug.md",
+    ".github/pull_request_template.md",
+    ".github/workflows/checks.yml",
+    ".gitignore",
+    "AGENTS.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SECURITY.md",
+    "acceptance/workspace.feature",
+    "docs/acceptance.md",
+    "docs/architecture.md",
+    "docs/experience-contracts.md",
+    "docs/release-readiness.md",
+    "public-files.json",
+    "release-status.json",
+    "tests/test_public_tree.py",
+    "tools/check_public_tree.py"
+  ]
+}

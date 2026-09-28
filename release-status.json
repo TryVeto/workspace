@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "package_kind": "publication-preparation",
+  "application_source_included": false,
+  "application_readiness": "blocked",
+  "gates": {
+    "source_identity": "not_run",
+    "third_party_rights": "blocked",
+    "private_data_separation": "not_run",
+    "clean_install": "not_run",
+    "core_workflow": "not_run",
+    "authority": "not_run",
+    "voice": "not_run",
+    "native_packaging": "not_run"
+  }
+}
